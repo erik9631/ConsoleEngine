@@ -1,5 +1,5 @@
 #include "Shape.h"
-
+using namespace cnr;
 
 Shape::Shape(Point position)
 {

@@ -2,12 +2,16 @@
 #include "Rectangle.h"
 class ScreenBuffer
 {
-	Rectangle size;
+	cnr::Rectangle size;
+	int bufferSize;
 	char* buffer;
 public:
-	Rectangle& GetSize();
-	ScreenBuffer(int size);
-	ScreenBuffer(Rectangle size);
+	cnr::Rectangle& GetSize();
+	ScreenBuffer(cnr::Rectangle size);
+	char& GetChar(int x, int y);
+	void Clear(char background);
+	void Clear();
+	char* GetBuffer();
 	~ScreenBuffer();
 };
 

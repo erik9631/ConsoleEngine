@@ -1,46 +1,46 @@
 #include "Point.h"
 
-Point::Point(int x, int y)
+cnr::Point::Point(int x, int y)
 {
 	this->x = x;
 	this->y = y;
 }
 
-Point::Point()
+cnr::Point::Point()
 {
 }
 
-int Point::GetX()
+int cnr::Point::GetX()
 {
 	return x;
 }
 
-int Point::GetY()
+int cnr::Point::GetY()
 {
 	return y;
 }
 
-void Point::SetX(int x)
+void cnr::Point::SetX(int x)
 {
 	this->x = x;
 }
 
-void Point::SetY(int y)
+void cnr::Point::SetY(int y)
 {
 	this->y = y;
 }
 
-void Point::SetPosition(int x, int y)
+void cnr::Point::SetPosition(int x, int y)
 {
 	this->x = x;
 	this->y = y;
 }
 
-Point Point::operator-(Point & point)
+cnr::Point cnr::Point::operator-(cnr::Point & point)
 {
 	return Point(this->GetX() - point.GetX(), this->GetY() - point.GetY());
 }
 
-Point::~Point()
+cnr::Point::~Point()
 {
 }
